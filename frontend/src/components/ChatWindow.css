@@ -1,0 +1,49 @@
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 500px;
+  max-height: 500px;
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 123, 255, 0.4);
+  border-radius: 10px;
+}
+
+.typing-indicator {
+  font-size: 0.85rem;
+  color: #1c70ca;
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.closing-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.start-session-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-session-button:hover {
+  background-color: #0056d2;
+}
